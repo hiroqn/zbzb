@@ -1,0 +1,11 @@
+{
+    "name": "zbzb",
+    "version": "0.1.0",
+    "bin": {
+        "gcb": "./bin/cmd.js"
+    },
+    "main": "./lib/builder.js",
+    "dependencies": {
+        "commander": "0.5.x"
+    }
+}
