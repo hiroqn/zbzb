@@ -8,7 +8,8 @@ inspired by `browserify` & `browserbuild`
 
 
 1. example
-**exapmple/package.json**
+    **exapmple/package.json**
+
     ```js
     {
         "name": "sample",
@@ -16,7 +17,9 @@ inspired by `browserify` & `browserbuild`
         "main": "./sample.js"
     }
     ```
-**example/math.js**
+    
+    **example/math.js**
+    
     ```js
     var CONST = 100;
     exports.add = function(n){
@@ -24,7 +27,8 @@ inspired by `browserify` & `browserbuild`
     };
     ```
 
-**example/sample.js**
+    **example/sample.js**
+    
     ```js
     var add = require('./math.js').add,
         map = module.exports = function () {
@@ -38,7 +42,8 @@ inspired by `browserify` & `browserbuild`
 
 2. example2
 
-**example/example2/package.json**
+    **example/example2/package.json**
+    
     ```js
     {
         "name": "sample2",
@@ -46,13 +51,15 @@ inspired by `browserify` & `browserbuild`
     }
     ```
 
-**example/.global/core.js**
+    **example/.global/core.js**
+    
     ```js
     var core_toString = Object.prototype.toString;
     // this will be global var under sample2 package
     ```
 
-**example/example2/index.js**
+    **example/example2/index.js**
+    
     ```js
     var type = exports.type = function (obj) {
       return obj == null ?
@@ -64,7 +71,8 @@ inspired by `browserify` & `browserbuild`
 
 3. example3
 
-**example/example2/example3/package.json**
+    **example/example2/example3/package.json**
+    
     ```js
     {
         "name": "sample3",
@@ -72,7 +80,8 @@ inspired by `browserify` & `browserbuild`
     }
     ```
 
-**example/example2/example3/index.js**
+    **example/example2/example3/index.js**
+    
     ```js
     console.log('this is package example3');
     ```
@@ -80,7 +89,8 @@ inspired by `browserify` & `browserbuild`
 
 
 4. go
-`node spec > bin.js` & `node bin`
+
+    `node spec > bin.js` & `node bin`
 
     ```
     [ 101, 102, 103 ]
